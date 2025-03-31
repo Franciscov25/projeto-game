@@ -5,7 +5,7 @@
 3) Iniciando o git
 4) Adicionar e fazer o commit
 5) Subir o projeto para o repositório do github
-6) Criar a branch dev: git checkout -b dev
+6) Criar a branch dev: ``git checkout -b dev``
 7) Criando as pastas components, routes e styles dentro de src
 8) Instalar as dependências que serão utilizadas no projeto
 npm install react-router-dom
