@@ -5,6 +5,7 @@ export const FooterContainer = styled.div`
     color:#273642FF;
     padding:20px;
     margin-top:auto;
+    font-family: Verdana;
 
     display:flex;
     justify-content:space-around;
