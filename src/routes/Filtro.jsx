@@ -1,11 +1,16 @@
-import React from 'react'
+import {FiltroContainer} from '../styles/FiltroStyled'
 
-const Filtro = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+
+
+const Filtro = ({titulo,opcoes,tipo,min,max, valor, onChange}) => {
+
+return (
+
+<FiltroContainer>
+
+<h3>{titulo}</h3>
+</FiltroContainer>
+)
 }
 
 export default Filtro
