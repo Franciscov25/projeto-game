@@ -9,42 +9,7 @@ import Jogador from './routes/Jogador'
 import Produtos from './routes/Produtos'
 import Aside from './routes/Aside'
 import Dados from './Data/dados.json'
-import { createGlobalStyle } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  background:#f4f4f4;
-}
-#container{
-  display:flex;
-  flex-direction:column;
-  min-height: 100vh;
-}
-
-#content-wraper{
-  display:grid;
-  grid-template-column: 1fr 200px;
-  gap: 20px;
-  padding: 20px;
-  flex:1;
-}
-
-@media(max-width:768px){
-  #content-wrape{
-    grid-template-column: 1fr;
-  }
-  aside{
-    display:block;
-    width:100%;
-  }
-}
-`
+import GlobalStyle from './styles/GlobalStyled'
 
 
 function App() {
@@ -53,7 +18,9 @@ function App() {
     <>
     <Router>
       <GlobalStyle/>
+      <div id="container">
       <Header/>
+      <div id="content-wraper">
       <Routes>
         {/*aspas simples não funcionam*/}
         <Route path="*" element={<Error/>}/>
@@ -64,7 +31,9 @@ function App() {
         <Route path="/produto" element={<Produtos/>}/>
       </Routes>
       <Aside/>
+      </div>
       <Footer/>  
+      </div>
     </Router>      
     </>
   )

@@ -1,9 +1,10 @@
 import React from 'react'
-import { FooterContainer } from '../styles/FooterStyled'
+import { FooterContainer , FooterContext } from '../styles/FooterStyled'
 
 const Footer = () => {
   return (
     <FooterContainer>
+    <FooterContext>
     <div className='contato'>
       <h3>Contato</h3>
       <p>@2025 | Todos os direitos reservados</p>
@@ -23,6 +24,7 @@ const Footer = () => {
       </ul>
 
     </div>
+    </FooterContext>
     </FooterContainer>
   )
 }

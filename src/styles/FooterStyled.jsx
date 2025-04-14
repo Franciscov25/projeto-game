@@ -6,10 +6,13 @@ export const FooterContainer = styled.div`
     padding:20px;
     margin-top:auto;
     font-family: Verdana;
+`
 
+export const FooterContext = styled.div`
     display:flex;
     justify-content:space-around;
     max-width:1200px;
+    margin: auto;
 
     h3{
         margin-bottom:10px;

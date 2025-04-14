@@ -25,5 +25,9 @@ export const Nav = styled.nav`
         padding:5px 10px;
         font-size:0.8rem;
         font-weight:600;
+        transition: transform 0.3s ease;
+    }
+    a:hover{
+        color:rgb(146, 161, 200);
     }
 `;
